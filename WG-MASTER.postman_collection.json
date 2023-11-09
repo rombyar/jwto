@@ -63,7 +63,7 @@
 					]
 				},
 				"url": {
-					"raw": "https://master-dev.wikagedung.id/api/send",
+					"raw": "https://GantiUrlMaster/api/send",
 					"protocol": "https",
 					"host": [
 						"master-dev",
