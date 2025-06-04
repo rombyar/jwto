@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "e0c2157a-bbcf-4ece-900a-114eea300393",
+		"name": "WG-MASTER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4263708"
+	},
+	"item": [
+		{
+			"name": "CLIENT to MASTER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTAzNjgyNjYsImp0aSI6Ik5EWXlPVFl5TVRJeE16RTBOelkwTURNME9EQTFNemc0TmpZeU5Ua3hNalE9IiwiaXNzIjoicmtwZGV2LTk0MDY0YzAiLCJ1c2VyV2ViIjoicmtwZGV2LTk0MDY0YzAifQ.gibLLWPFdX8tEGHCp67yzpX9FtIISmJOXE2dGZ2K0gA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "destination",
+							"value": "628000006660",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "message",
+							"value": "Cobaan Ku...",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "access_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTAzNjgyNjYsImp0aSI6Ik5EWXlPVFl5TVRJeE16RTBOelkwTURNME9EQTFNemc0TmpZeU5Ua3hNalE9IiwiaXNzIjoicmtwZGV2LTk0MDY0YzAiLCJ1c2VyV2ViIjoicmtwZGV2LTk0MDY0YzAifQ.gibLLWPFdX8tEGHCp67yzpX9FtIISmJOXE2dGZ2K0gA",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "{\"messageList\":[{\"number\":\"628000006660\",\"message\":\"Testing API Staging 1\",\"isImage\":\"kosong\",\"caption\":\"kosong\",\"image\":\"kosong\"}]}",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "{\"messageList\":[{\"number\":\"628000006660\",\"message\":\"*TEXT*\\r\\n\\r\\n~helo SAYA~\\r\\n\\r\\nenter ROMA 01\",\"isMedia\":false,\"typeMedia\":\"text\",\"urlMedia\":\"\"}]}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://GantiUrlMaster/api/send",
+					"protocol": "https",
+					"host": [
+						"master-dev",
+						"wikagedung",
+						"id"
+					],
+					"path": [
+						"api",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
